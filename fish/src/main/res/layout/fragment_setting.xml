@@ -1,0 +1,303 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slideswitch="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    tools:context="Fragments.SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/PublishCourseIfo_relayout_price_two"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:text="软件启动时间"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/CoursePrice_unit_tv_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:text=""
+                android:textColor="@color/color_333333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/CoursePrice_input_et"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/CoursePrice_unit_tv_online"
+                android:background="@null"
+                android:gravity="right|center"
+                android:hint="请输入"
+                android:inputType="number|numberDecimal"
+                android:maxLength="10"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textCursorDrawable="@drawable/serch_edit_cursor_color"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/style_finishuserinfo_tv_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="18dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/color_ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:text="金币大于多少自动退出"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:text=""
+                android:textColor="@color/color_333333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/right_tv"
+                android:background="@null"
+                android:gravity="right|center"
+                android:hint="请输入"
+                android:inputType="number|numberDecimal"
+                android:maxLength="10"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textCursorDrawable="@drawable/serch_edit_cursor_color"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/style_finishuserinfo_tv_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="18dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/lsh_user_setting_relativeLayout_style"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/lsh_user_setting_relativeLayout_textview_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="防封躲避 " />
+
+            <Views.SlideSwitchButton
+                android:layout_width="45dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                slideswitch:isOpen="false"
+                slideswitch:shape="circle"
+                slideswitch:themeColor="@color/color_3699ff" />
+
+            <TextView
+                style="@style/style_finishuserinfo_tv_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="18dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/lsh_user_setting_relativeLayout_style"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/lsh_user_setting_relativeLayout_textview_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="威力增强" />
+
+            <Views.SlideSwitchButton
+                android:layout_width="45dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                slideswitch:isOpen="false"
+                slideswitch:shape="circle"
+                slideswitch:themeColor="@color/color_3699ff" />
+
+            <TextView
+                style="@style/style_finishuserinfo_tv_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="18dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/lsh_user_setting_relativeLayout_style"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/lsh_user_setting_relativeLayout_textview_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="优化数据" />
+
+            <Views.SlideSwitchButton
+                android:layout_width="45dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                slideswitch:isOpen="false"
+                slideswitch:shape="circle"
+                slideswitch:themeColor="@color/color_3699ff" />
+
+            <TextView
+                style="@style/style_finishuserinfo_tv_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="18dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/lsh_user_setting_relativeLayout_style"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/lsh_user_setting_relativeLayout_textview_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="后台自动清理" />
+
+            <Views.SlideSwitchButton
+                android:layout_width="45dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                slideswitch:isOpen="false"
+                slideswitch:shape="circle"
+                slideswitch:themeColor="@color/color_3699ff" />
+
+            <TextView
+                style="@style/style_finishuserinfo_tv_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="18dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/LSHUserSettingAc_relativeLayout_startNotification"
+            style="@style/lsh_user_setting_relativeLayout_style"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/lsh_user_setting_relativeLayout_textview_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="大鱼弱化" />
+
+            <Views.SlideSwitchButton
+                android:id="@+id/LSHUserSettingAc_switchBtn"
+                android:layout_width="45dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                slideswitch:isOpen="false"
+                slideswitch:shape="circle"
+                slideswitch:themeColor="@color/color_3699ff" />
+
+            <TextView
+                style="@style/style_finishuserinfo_tv_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="18dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/PublishCourseIfo_relayout_Speaker"
+            style="@style/style_finishuserinfo_relayout"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/style_finishuserinfo_tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下鱼率调整" />
+
+            <TextView
+                android:id="@+id/xiayulv"
+                style="@style/style_finishuserinfo_tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="190dp"
+                android:text="10%"
+                android:textColor="@color/color_333333" />
+
+            <ImageView
+                style="@style/style_finishuserinfo_imgv_right"
+                android:layout_width="11.5dp"
+                android:layout_height="12.5dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/start_up"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_0000aa"
+        android:gravity="center"
+        android:text="启动"
+        android:textColor="@color/color_ffffff"
+        android:textSize="16sp" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="250dp"
+    android:padding="5dp"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <Views.VerticalScrollTextView
+        android:id="@+id/scroll_tv"
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:text="ne decoration to drawn text.Prior to N, when drag enters into child of a view that has already received an
+ACTION_DRAG_ENTERED event, the parent doesn't get a ACTION_DRAG_EXITED event.Starting from N, the parent will get ACTION_DRAG_EXITED event before the child gets itsACTION_DRAG_ENTERED. ACTION_DRAG_LOCATION and ACTION_DROP are never propagated to the parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="正在检测..."
+        android:textColor="@color/color_0A7CD8"
+        android:textSize="16sp" />
+</LinearLayout>

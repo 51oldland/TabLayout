@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="Fragments.LoginFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:scaleType="fitXY"
+        android:src="@drawable/newbg" />
+
+    <RelativeLayout
+        android:id="@+id/LogAc_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <Views.EditTextWithDel
+            android:id="@+id/login_edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="32dp"
+            android:background="@null"
+            android:hint="请填写游戏ID或账号"
+            android:inputType="textEmailAddress"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_c3c3c3"
+            android:textCursorDrawable="@drawable/serch_edit_cursor_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/login_tv_line1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/login_edt_username"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/login_tv_pwd"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:layout_below="@+id/login_tv_line1"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textSize="18sp" />
+
+        <Views.EditTextWithDel
+            android:id="@+id/login_edt_userpwd"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_alignTop="@+id/login_tv_pwd"
+            android:layout_below="@+id/login_edt_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@+id/login_relayout_cb"
+            android:layout_toRightOf="@+id/login_tv_pwd"
+            android:background="@null"
+            android:hint="请输入注册码"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_c3c3c3"
+            android:textCursorDrawable="@drawable/serch_edit_cursor_color"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/login_relayout_cb"
+            android:layout_width="30dp"
+            android:layout_height="21dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/login_edt_userpwd"
+            android:layout_marginRight="30dp">
+
+            <CheckBox
+                android:id="@+id/login_imgv_pwd"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/checkbox_login_pwd_selector"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/login_tv_line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/login_tv_pwd"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:background="#cccccc" />
+
+        <Button
+            android:id="@+id/login_bt_login"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/login_tv_line2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_login_pressed_false_shape"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/shifouzhuce"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="未注册"
+        android:gravity="center"
+        android:background="@drawable/lsh_tv_pressed_blue_style"
+        android:textColor="@color/color_ffffff"
+        android:textSize="23sp" />
+
+</RelativeLayout>

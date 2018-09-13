@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="140dp"
+    android:padding="5dp"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <Views.VerticalScrollTextView
+        android:id="@+id/scroll_tv"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:text="as87d0a98s7das7d68a7s6d78a6s9d7a6 a76s87 6876 8a7s6d9a7s6 98a7s6d 87a6s87d6a8s76d 8a7s6d9a87s6d 87a6s87d 6a9s87d6 a9s786d a87s6d87a6s 8d7a6s86 da89s76 8a7s6d 87a6s87 6a9s876da87s6 d87a6s9d7 a6s987d6a86876da87s6d 87a68s76 d78a6s87d6a87s6d868 76876976 87a6s87d6a87s6d876as87d6a9s876da78s6d876 87a6s876987as6987d6a98s76da87"/>
+    <TextView
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="停止工作"
+        android:textColor="@color/color_0A7CD8"
+        android:textSize="14sp" />
+</LinearLayout>

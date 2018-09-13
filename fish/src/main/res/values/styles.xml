@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LLAppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="StartTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="style_finishuserinfo_tv_line">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/color_eeeeee</item>
+    </style>
+    <!-- 设置界面  relativeLayout-->
+    <style name="lsh_user_setting_relativeLayout_style">
+        <!--<item name="android:background">@color/color_ffffff</item>-->
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 设置界面  文字样式 对齐方式-->
+    <style name="lsh_user_setting_relativeLayout_textview_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--完善资料新界面finishuserinfo-->
+    <style name="style_finishuserinfo_relayout">
+        <!--<item name="android:background">@color/color_ffffff</item>-->
+        <item name="android:paddingLeft">18dp</item>
+    </style>
+    <style name="style_finishuserinfo_tv_left">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+    <style name="style_finishuserinfo_tv_right">
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">26dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="style_finishuserinfo_imgv_right">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/icon_self_new_ui_more</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+</resources>
